@@ -2,7 +2,7 @@
 
 What do you need
 
-
+``` php
 <php
 class Route{
   private $uri = array();
@@ -24,7 +24,7 @@ class Route{
 
 
 <?
-
+```
 
 
 
