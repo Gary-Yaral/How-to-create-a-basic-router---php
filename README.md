@@ -1,9 +1,10 @@
 # How-to-create-a-basic-router---php
 
-What do you need
+## Router file
 
 ``` php
-<php
+
+<?php
 class Route{
   private $uri = array();
   private $views = array();
@@ -22,20 +23,21 @@ class Route{
   }
 }
 
-
-<?
+?>
 ```
 
 
 
 
 ## .htaccess file
+
+```
 RewriteEngine On
-RewriteBase /mymainfolder/
+RewriteBase /mainfolder/
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^(.+)$ index.php?uri=$1 [QSA,L]
-
+```
 
